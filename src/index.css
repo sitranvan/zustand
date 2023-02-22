@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.counter {
+    display: flex;
+    gap: 20px;
+}
+
+.counter span {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.counter button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(53, 44, 44);
+    color: white;
+    cursor: pointer;
+}
+.post {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+}
+.post h2 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.post-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.post-content p {
+    margin: 0;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: gray;
+}
+
+/* Todo */
+.todo {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.todo h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2a5c0f;
+}
+
+.todo-input {
+    width: 100%;
+    position: relative;
+}
+
+.todo-input input {
+    width: 100%;
+    height: 100%;
+    padding: 15px 60px 15px 20px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    color: rgb(79, 79, 79);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.todo-input span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 30px;
+    border-radius: 0 6px 6px 0;
+    background-color: #329100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.todo-list h3 {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.todo-content {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0 10px;
+}
+
+.todo-item span {
+    font-size: 18px;
+    color: #2a5c0f;
+}
+
+.todo-item span.complete {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+.todo-action {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 25px;
+}
+.todo-action * {
+    cursor: pointer;
+}
+.todo-action *:hover {
+    color: #2a5c0f;
+}
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Content {
+    width: 500px;
+    inset: unset !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 40px !important;
+}
+
+.modal h2 {
+    margin-bottom: 30px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.close-modal:hover {
+    opacity: 0.7;
+}
